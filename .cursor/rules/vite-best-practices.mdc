@@ -1,0 +1,8 @@
+---
+description: Best practices for using Vite as a build tool
+globs: **/*.{ts,js}
+---
+- Optimize build performance with proper configuration
+- Use Vite's plugin system, like `@vitejs/plugin-vue`, for enhanced functionality
+- Implement proper environment variable management
+- Utilize Vite's hot module replacement for efficient development

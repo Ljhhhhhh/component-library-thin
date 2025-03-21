@@ -1,0 +1,7 @@
+---
+description: Best practices for using the DCP Component Library
+globs: **/*.{ts,vue}
+---
+- Use the provided web components for consistency across the application
+- Import styles from the component library to ensure uniform styling
+- Utilize the Storybook setup for component development and testing

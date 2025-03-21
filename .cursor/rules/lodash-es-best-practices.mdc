@@ -1,0 +1,8 @@
+---
+description: Best practices for using Lodash ES for utility functions
+globs: **/*.{ts,js,vue}
+---
+- Import only the necessary functions to reduce bundle size
+- Use Lodash's chaining for more readable and efficient code
+- Implement proper memoization techniques for performance optimization
+- Leverage Lodash's functional programming utilities for cleaner code

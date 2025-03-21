@@ -1,0 +1,8 @@
+---
+description: Best practices for using GSAP for animations
+globs: **/*.{vue,ts,js}
+---
+- Use GSAP's timeline feature for complex animations
+- Optimize performance by using GSAP's built-in easing functions
+- Implement proper animation cleanup to prevent memory leaks
+- Leverage GSAP's plugin system for advanced animation techniques

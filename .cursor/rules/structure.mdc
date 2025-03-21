@@ -1,0 +1,94 @@
+---
+description: 
+globs: 
+---
+# Project Structure
+
+```
+.
+├── .gitignore
+├── .scripts
+│   └── update_structure.sh
+├── .storybook
+│   ├── main.ts
+│   ├── manager.ts
+│   ├── preview.ts
+│   └── theme.ts
+├── package.json
+├── pnpm-lock.yaml
+├── readme.md
+├── src
+│   ├── components
+│   │   ├── Chamber
+│   │   │   ├── Chamber.stories.ts
+│   │   │   ├── index.ts
+│   │   │   └── index.vue
+│   │   ├── Loadport
+│   │   │   ├── Loadport.stories.ts
+│   │   │   ├── config.ts
+│   │   │   ├── index.ts
+│   │   │   └── index.vue
+│   │   ├── MultiColorLight
+│   │   │   ├── MuliColorLight.stories.ts
+│   │   │   ├── index.ts
+│   │   │   └── index.vue
+│   │   ├── SixAxisRobot
+│   │   │   ├── SixAxisRobot.stories.ts
+│   │   │   ├── config.ts
+│   │   │   ├── hooks
+│   │   │   │   ├── useGripper.ts
+│   │   │   │   ├── useMechanical.ts
+│   │   │   │   └── useSucker.ts
+│   │   │   ├── index.ts
+│   │   │   └── index.vue
+│   │   ├── Wafer
+│   │   │   ├── Wafer.stories.ts
+│   │   │   ├── index.ts
+│   │   │   └── index.vue
+│   │   ├── button
+│   │   │   ├── Index.vue
+│   │   │   └── index.ts
+│   │   ├── index.ts
+│   │   └── status
+│   │       ├── DcpStatus.stories.ts
+│   │       ├── Index.vue
+│   │       └── index.ts
+│   ├── hooks
+│   │   └── useComponentState.ts
+│   ├── index.ts
+│   ├── stories
+│   │   ├── Button.stories.ts
+│   │   ├── Button.vue
+│   │   ├── Header.stories.ts
+│   │   ├── Header.vue
+│   │   ├── Page.stories.ts
+│   │   ├── Page.vue
+│   │   ├── assets
+│   │   │   ├── accessibility.png
+│   │   │   ├── accessibility.svg
+│   │   │   ├── addon-library.png
+│   │   │   ├── assets.png
+│   │   │   ├── avif-test-image.avif
+│   │   │   ├── context.png
+│   │   │   ├── discord.svg
+│   │   │   ├── docs.png
+│   │   │   ├── figma-plugin.png
+│   │   │   ├── github.svg
+│   │   │   ├── logo.png
+│   │   │   ├── share.png
+│   │   │   ├── styling.png
+│   │   │   ├── testing.png
+│   │   │   ├── theming.png
+│   │   │   ├── tutorials.svg
+│   │   │   └── youtube.svg
+│   │   ├── button.css
+│   │   ├── header.css
+│   │   └── page.css
+│   └── styles
+│       └── index.scss
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
+
+17 directories, 67 files
+```

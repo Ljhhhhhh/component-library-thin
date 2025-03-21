@@ -1,0 +1,8 @@
+---
+description: Best practices for using Storybook for component 
+globs: **/*.{ts,vue,stories.mdx}
+---
+- Write clear and descriptive stories for each component
+- Use addons like Essentials and Interactions for enhanced development experience
+- Implement chromatic testing for visual regression
+- Keep stories organized and use proper categorization

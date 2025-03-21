@@ -1,0 +1,43 @@
+{
+  "name": "@dcp/my-component-library",
+  "version": "0.0.1",
+  "files": [
+    "js"
+  ],
+  "main": "js/web-component.mjs",
+  "author": "LuJieHui",
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  },
+  "scripts": {
+    "build": "vite build",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.4",
+    "@storybook/addon-essentials": "^8.5.8",
+    "@storybook/addon-interactions": "^8.5.8",
+    "@storybook/addon-onboarding": "^8.5.8",
+    "@storybook/blocks": "^8.5.8",
+    "@storybook/manager-api": "^8.5.8",
+    "@storybook/test": "^8.5.8",
+    "@storybook/theming": "^8.5.8",
+    "@storybook/vue3": "^8.5.8",
+    "@storybook/vue3-vite": "^8.5.8",
+    "@types/color": "^4.2.0",
+    "@types/node": "^22.10.7",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "sass": "^1.83.4",
+    "storybook": "^8.5.8",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7",
+    "vite-plugin-css-injected-by-js": "^3.5.2",
+    "vite-plugin-dts": "^4.5.0",
+    "vue": "^3.5.13"
+  },
+  "dependencies": {
+    "@iconify/vue": "^4.3.0",
+    "color": "^5.0.0"
+  }
+}

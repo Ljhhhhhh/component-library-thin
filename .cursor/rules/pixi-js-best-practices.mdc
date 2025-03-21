@@ -1,0 +1,8 @@
+---
+description: Best practices for using Pixi.js for rendering graphics
+globs: **/*.{ts,js}
+---
+- Optimize rendering performance by using Pixi's built-in optimizations
+- Implement proper resource management and texture handling
+- Use Pixi's container system for efficient scene management
+- Leverage Pixi's particle system for complex visual effects
