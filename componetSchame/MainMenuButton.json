@@ -2,11 +2,11 @@
   "id": 1,
   "version": "0.0.1",
   "name": {
-    "zh_CN": "Semi按钮"
+    "zh_CN": "定制按钮"
   },
   "component": "MainMenuButton",
   "icon": "button",
-  "description": "Semi标准按钮",
+  "description": "自定义按钮",
   "doc_url": "",
   "screenshot": "",
   "tags": "",
@@ -19,7 +19,7 @@
     "script": "http://localhost:4874/@dcp/my-component-library@0.0.1/js/web-component.mjs",
     "destructuring": true
   },
-  "group": "DCP",
+  "group": "Customer",
   "configure": {
     "loop": true,
     "condition": true,
@@ -249,7 +249,7 @@
   "snippets": [
     {
       "name": {
-        "zh_CN": "Semi按钮"
+        "zh_CN": "定制按钮"
       },
       "icon": "button",
       "screenshot": "",
@@ -258,7 +258,7 @@
         "props": {
           "width": 140,
           "height": 70,
-          "text": "Semi按钮",
+          "text": "定制按钮",
           "icon": "mdi:menu",
           "backgroundColor": "#1A7285",
           "color": "#18DBD3",
@@ -267,5 +267,5 @@
       }
     }
   ],
-  "category": "DCP"
+  "category": "Customer"
 }
