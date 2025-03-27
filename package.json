@@ -1,10 +1,10 @@
 {
   "name": "@dcp/component-library",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "files": [
     "dist"
   ],
-  "main": "dist/web-component.mjs",
+  "main": "dist/component-library.mjs",
   "author": "LuJieHui",
   "publishConfig": {
     "registry": "http://localhost:4873"

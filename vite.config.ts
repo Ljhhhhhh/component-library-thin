@@ -23,12 +23,6 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'WebComponents',
-      fileName: (format) => {
-        if (format === 'es') {
-          return 'web-component.mjs';
-        }
-        return `web-component.${format}.js`;
-      },
     },
     rollupOptions: {
       external: ['vue'],
