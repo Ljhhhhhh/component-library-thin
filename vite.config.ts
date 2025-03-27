@@ -15,7 +15,7 @@ export default defineConfig({
     cssInjectedByJs(),
     dts({
       include: ['src/**/*.ts', 'src/**/*.tsx', 'src/**/*.vue'],
-      outDir: 'js/types',
+      outDir: 'dist/types',
     }),
   ],
   build: {
