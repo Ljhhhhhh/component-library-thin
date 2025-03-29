@@ -7,8 +7,6 @@ const meta = {
   component: MainMenuButton,
   tags: ['autodocs'],
   argTypes: {
-    width: { control: 'number', description: '按钮宽度（像素）' },
-    height: { control: 'number', description: '按钮高度（像素）' },
     text: { control: 'text', description: '按钮文本' },
     icon: { control: 'text', description: '按钮图标（Iconify 图标名称）' },
     backgroundColor: { control: 'color', description: '按钮背景颜色' },
@@ -64,37 +62,6 @@ export const Disabled: Story = {
     text: '禁用',
     icon: 'mdi:lock',
   },
-};
-
-// 不同尺寸
-export const DifferentSizes: Story = {
-  name: '不同尺寸',
-  render: (args) => ({
-    components: { MainMenuButton },
-    setup() {
-      return { args };
-    },
-    template: `
-      <div style="display: flex; gap: 20px; align-items: flex-start;">
-        <div>
-          <MainMenuButton v-bind="args" :width="80" :height="80" text="小" />
-          <div style="text-align: center; margin-top: 10px;">80x80px</div>
-        </div>
-        <div>
-          <MainMenuButton v-bind="args" :width="100" :height="100" text="中" />
-          <div style="text-align: center; margin-top: 10px;">100x100px</div>
-        </div>
-        <div>
-          <MainMenuButton v-bind="args" :width="120" :height="120" text="大" />
-          <div style="text-align: center; margin-top: 10px;">120x120px</div>
-        </div>
-        <div>
-          <MainMenuButton v-bind="args" :width="150" :height="150" text="特大" />
-          <div style="text-align: center; margin-top: 10px;">150x150px</div>
-        </div>
-      </div>
-    `,
-  }),
 };
 
 // 不同颜色
@@ -176,48 +143,36 @@ export const ControlPanel: Story = {
     template: `
       <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; max-width: 350px; background-color: #2c2c2c; padding: 20px; border-radius: 8px;">
         <MainMenuButton 
-          :width="100" 
-          :height="100" 
           text="监控" 
           icon="mdi:monitor-dashboard"
           backgroundColor="#3a3a3a"
           color="#ffffff"
         />
         <MainMenuButton 
-          :width="100" 
-          :height="100" 
           text="设备" 
           icon="mdi:factory"
           backgroundColor="#3a3a3a"
           color="#ffffff"
         />
-        <MainMenuButton 
-          :width="100" 
-          :height="100" 
+        <MainMenuButton  
           text="报警" 
           icon="mdi:bell-ring"
           backgroundColor="#d32f2f"
           color="#ffffff"
         />
         <MainMenuButton 
-          :width="100" 
-          :height="100" 
           text="数据" 
           icon="mdi:chart-line"
           backgroundColor="#3a3a3a"
           color="#ffffff"
         />
         <MainMenuButton 
-          :width="100" 
-          :height="100" 
           text="设置" 
           icon="mdi:cog"
           backgroundColor="#3a3a3a"
           color="#ffffff"
         />
         <MainMenuButton 
-          :width="100" 
-          :height="100" 
           text="电源" 
           icon="mdi:power"
           backgroundColor="#388e3c"

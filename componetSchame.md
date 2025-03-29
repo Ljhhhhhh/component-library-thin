@@ -10,47 +10,59 @@
 ## schema 生成
 
 你是一位心思缜密且喜欢反复验证的数据处理大师
-我现在需要你来帮我生成组件的 schema 数据，在这之前你需要先充分学习此说明文档：@引入第三方组件库，再你学习完成之后，还有以下几个点需要你遵守：
+我现在需要你来帮我生成组件的 schema 数据，在这之前你需要先充分学习此说明文档： @设计器中引入第三方组件库.md ，**请重点学习文档中组件 schema 定义规范、属性配置规则和 npm 信息配置这三部分内容**。学习完成之后，还有以下几个点需要你遵守：
 
-- version 为当前@package.json 的 version
-- group 请你都给我设置为 DCP
+- version 为当前 @package.json 的 version
+- group 请你都给我设置为 Customer
+- category 请你给我设置为 customer
 - doc_url、screenshot、tags、keywords 默认为空
 - dev_mode 为 proCode
 - id 为 1
-- npm 配置除 exportName 外为默认值
+- **请严格按照以下格式定义属性**：
+  {
+  "type": "<数据类型>",
+  "component": "<渲染组件>",
+  "label": "<显示标签>",
+  "default": "<默认值>"
+  }
+
+- 提供完整的 npm 信息，**必须包含以下属性**：
+
+  - package: package.json 中的 name
+  - exportName: 当前组件的导出名称
+  - version: package.json 中的 version
+  - script: http://127.0.0.1:4874/@dcp/component-library@0.0.1/js/component-library.mjs
+  - destructuring: 当前组件是否需要解构
+  - npmrc: @dcp:registry=http://127.0.0.1:4873
+
 - configure 配置为相同的默认值
-- 仔细思考并验证后再输出 schema
-- 仔细思考并验证后再输出 snippets
 
-### widget.component
+- widget.component 选择规则：
 
-对于 schema.properties.content 下的 widget.component（配置属性的渲染组件）说明如下：
-一般可以通过属性的类型判断选用哪个组件，string 类型一般选择 MetaInput 或 MetaBindI18n、enum 类型一般选择 MetaSelect、object 类型一般选择 MetaCodeEditor，具体可用的有如下组件：
+对于 schema.properties.content 下的 widget.component，**参照以下映射关系选择**：
 
-- MetaInput
-- MetaBindI18n
-- MetaBindVariable
-- MetaCodeEditor
-- MetaNumber
-- MetaRadio
-- MetaSelect
-- MetaSlider
-- MetaSwitch
-- MetaColor
-- MetaDatePicker
-- MetaJsSlot
-- MetaSlot
+- string → MetaInput/MetaBindI18n
+- enum → MetaSelect
+- object → MetaCodeEditor
+- number → MetaNumber
+- boolean → MetaSwitch
+- color → MetaColor
+- slot → MetaSlot
 
-请你根据组件属性来合理选择 component
+**验证步骤**：
+
+1. 检查必填字段是否完备
+2. 核对所有字段类型是否正确
+3. 验证组件选用是否合理
+4. 确保 npm 信息完整准确
 
 ## 预习验证
 
-现在请你参考以下组件和对应的 schema 文件做一次预习验证
+参考以下组件 schema 文件做一次预习验证：
 
-1. @index.vue 以及他对应的 schema 文件 @SixAxisRobot.json
-2. @Index.vue 以及他对应的 schema 文件 @DcpStatus.json
-3. @index.vue 以及他对应的 schema 文件 @MainMenuButton.json
+1. @file:componetSchame/ElFormItem.json
+2. @file:componetSchame/TinyButton.json
 
 ## 生成
 
-现在请你帮我生成 @index.vue 组件的 schema，不要急于给出最终的 schema，而是充分验证后给出准确的 schema
+生成 @index.vue 组件 schema 并存放到 componetSchama 下的 MainMenuButton.json，**经过三次交叉验证后**再给出最终的 schema

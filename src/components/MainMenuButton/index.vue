@@ -2,8 +2,6 @@
   <button
     class="main-menu-button"
     :style="{
-      width: `${width}px`,
-      height: `${height}px`,
       backgroundColor: backgroundColor,
       color: color,
     }"
@@ -27,14 +25,6 @@ export default defineComponent({
     Icon,
   },
   props: {
-    width: {
-      type: Number,
-      default: 140,
-    },
-    height: {
-      type: Number,
-      default: 70,
-    },
     text: {
       type: String,
       default: '按钮',
@@ -57,16 +47,13 @@ export default defineComponent({
     },
   },
   setup(props) {
-    const { width, height, text, icon, backgroundColor, color, disabled } =
-      toRefs(props);
+    const { text, icon, backgroundColor, color, disabled } = toRefs(props);
 
     const handleClick = () => {
       console.log('click');
     };
 
     return {
-      width,
-      height,
       text,
       icon,
       backgroundColor,
@@ -83,8 +70,10 @@ export default defineComponent({
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
+  padding: 10px 16px;
+  box-sizing: border-box;
   background-color: v-bind(backgroundColor);
   color: v-bind(color);
   border: none;
