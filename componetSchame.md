@@ -9,6 +9,8 @@
 
 ## schema 生成
 
+> OpenTiny 组件 Schema 规范：@file:doc/设计器中引入第三方组件库.md
+
 给 Vue 组件生成符合 OpenTiny 规范的组件 Schema，请按照以下详细步骤执行:
 
 # 预习
