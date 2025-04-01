@@ -1,0 +1,256 @@
+{
+  "id": 1,
+  "version": "0.0.3",
+  "name": {
+    "zh_CN": "主菜单按钮"
+  },
+  "component": "MainMenuButton",
+  "icon": "button",
+  "description": "具有图标和文本的主菜单按钮，提供可自定义颜色和样式的交互式菜单选项",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@dcp/component-library",
+    "exportName": "MainMenuButton",
+    "version": "0.0.3",
+    "script": "http://localhost:4874/@dcp/component-library@0.0.1/dist/componet-library.mjs",
+    "destructuring": true,
+    "npmrc": "@dcp:registry=http://localhost:4873"
+  },
+  "group": "component",
+  "category": "navigation",
+  "priority": 3,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": [
+          {
+            "property": "text",
+            "type": "string",
+            "defaultValue": "按钮",
+            "label": {
+              "text": {
+                "zh_CN": "按钮文字"
+              }
+            },
+            "cols": 12,
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "InputConfigurator",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "按钮显示的文本内容"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "icon",
+            "type": "string",
+            "defaultValue": "icon-button",
+            "label": {
+              "text": {
+                "zh_CN": "图标"
+              }
+            },
+            "cols": 12,
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "InputConfigurator",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "按钮显示的图标，使用Iconify图标名称"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "disabled",
+            "type": "boolean",
+            "defaultValue": false,
+            "label": {
+              "text": {
+                "zh_CN": "禁用"
+              }
+            },
+            "cols": 12,
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "SwitchConfigurator",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否禁用按钮"
+            },
+            "labelPosition": "left"
+          }
+        ]
+      },
+      {
+        "name": "1",
+        "label": {
+          "zh_CN": "样式设置"
+        },
+        "description": {
+          "zh_CN": "按钮外观样式配置"
+        },
+        "content": [
+          {
+            "property": "backgroundColor",
+            "type": "string",
+            "defaultValue": "#1A7285",
+            "label": {
+              "text": {
+                "zh_CN": "背景颜色"
+              }
+            },
+            "cols": 12,
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "ColorConfigurator",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "按钮的背景颜色"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "color",
+            "type": "string",
+            "defaultValue": "#18DBD3",
+            "label": {
+              "text": {
+                "zh_CN": "文本颜色"
+              }
+            },
+            "cols": 12,
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "ColorConfigurator",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "按钮的文本和图标颜色"
+            },
+            "labelPosition": "left"
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onClick": {
+        "label": {
+          "zh_CN": "点击事件"
+        },
+        "description": {
+          "zh_CN": "点击按钮时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [],
+          "returns": {
+            "type": "void"
+          }
+        }
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "isPopper": false,
+    "shortcuts": {
+      "properties": ["text", "icon", "backgroundColor", "disabled"]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "默认"
+      },
+      "screenshot": "",
+      "description": {
+        "zh_CN": "默认主菜单按钮"
+      },
+      "icon": "button",
+      "snippetName": "s1",
+      "schema": {
+        "props": {
+          "text": "菜单按钮",
+          "icon": "mdi:menu",
+          "backgroundColor": "#1A7285",
+          "color": "#18DBD3",
+          "disabled": false
+        }
+      }
+    },
+    {
+      "name": {
+        "zh_CN": "禁用状态"
+      },
+      "screenshot": "",
+      "description": {
+        "zh_CN": "禁用状态的主菜单按钮"
+      },
+      "icon": "button",
+      "snippetName": "s2",
+      "schema": {
+        "props": {
+          "text": "禁用按钮",
+          "icon": "mdi:lock",
+          "backgroundColor": "#1A7285",
+          "color": "#18DBD3",
+          "disabled": true
+        }
+      }
+    },
+    {
+      "name": {
+        "zh_CN": "自定义颜色"
+      },
+      "screenshot": "",
+      "description": {
+        "zh_CN": "自定义颜色的主菜单按钮"
+      },
+      "icon": "button",
+      "snippetName": "s3",
+      "schema": {
+        "props": {
+          "text": "自定义按钮",
+          "icon": "mdi:palette",
+          "backgroundColor": "#8A2BE2",
+          "color": "#FFFFFF",
+          "disabled": false
+        }
+      }
+    }
+  ]
+}
