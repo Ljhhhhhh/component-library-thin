@@ -22,7 +22,7 @@ export default defineConfig({
     outDir: 'dist',
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'WebComponents',
+      name: 'component-library',
     },
     rollupOptions: {
       external: ['vue'],
